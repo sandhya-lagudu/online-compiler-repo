@@ -1,0 +1,29 @@
+ <div className="flex items-center justify-center">
+        <form className="h-screen flex flex-col justify-center w-4/12">
+          <h1>Login to your account</h1>
+          <br />
+          <input
+            type="text"
+            name="uname"
+            id="uname"
+            placeholder="UserName"
+            // onChange={e=>{setUserName(e.target.value)}}
+            // value={user.lname}
+          />
+          <br />
+          
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            // onChange={e=>{setPassword(e.target.value)}}
+            // value={user.password}
+          />
+          <br />
+          
+          <button>
+            Register
+          </button>
+        </form>
+      </div>
