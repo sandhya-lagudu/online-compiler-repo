@@ -8,9 +8,10 @@ export function LandingPage(){
         navigate('/login');
     }
     const gotoregister = async event =>{
-        // console.log("Clicked");
-        event.preventDefault();
+        console.log("Clicked");
+        // console.log(import.meta.env.VITE_BACKEND_URL);
         navigate('/register');
+        event.preventDefault();
     }
     return(
         <>

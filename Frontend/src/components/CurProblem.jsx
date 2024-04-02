@@ -32,8 +32,8 @@ export function CurProblem(){
         return 0;  
     }`);
 
-    const url=`http://44.201.149.189:8080/viewProblem/${problem._id}/run`;
-    const submitUrl=`http://44.201.149.189:8080/viewProblem/${problem._id}/submit`;
+    const url=import.meta.env.VITE_BACKEND_URL+`/viewProblem/${problem._id}/run`;
+    const submitUrl=import.meta.env.VITE_BACKEND_URL+`/viewProblem/${problem._id}/submit`;
     
     const sendCode=async (funcUrl)=>{
       const payload={

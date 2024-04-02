@@ -14,7 +14,7 @@ export function Problems() {
     }, []);
     const navigate = useNavigate();
     const getQuesList = async event => {
-      await Axios.get(`http://44.201.149.189:8080/problemList`)
+      await Axios.get(import.meta.env.VITE_BACKEND_URL+`/problemList`)
       .then(async res => {
         // const jsonRes=await res.json;
         // console.log(jsonRes);

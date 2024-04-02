@@ -9,7 +9,7 @@ export function Register(){
     const [email,setEmail]=useState("");
     const [phone,setPhone]=useState(0);
     const [password,setPassword]=useState("");
-    const url=`http://44.201.149.189:8080/register`;
+    const url=import.meta.env.VITE_BACKEND_URL+`/register`;
     const navigate=useNavigate();
     const sendCode=async (event)=>{
       event.preventDefault();
@@ -55,7 +55,7 @@ export function Register(){
             type="text"
             name="lname"
             id="lname"
-            placeholder="Last Name"
+            placeholder="lastName"
             onChange={e=>{setLastName(e.target.value)}}
             // value={user.lname}
           />
@@ -103,7 +103,6 @@ export function Register(){
             // value={user.password}
           />
           <br />
-          
           <button class="bg-violet-500 py-1 px-1 rounded-xl text-xl shadow-2xl shadow-violet-950" type="submit">
             Register
           </button>

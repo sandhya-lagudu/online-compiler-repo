@@ -8,7 +8,7 @@ export function Login(){
     const [check,setCheck]=useState(0);
     // console.log(check);
     const navigate=useNavigate();
-    const url=`http://44.201.149.189:8080/login`;
+    const url=import.meta.env.VITE_BACKEND_URL+`/login`;
     
     // const checkUser=()=>{
     //     const payload={
