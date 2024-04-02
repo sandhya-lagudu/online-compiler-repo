@@ -9,7 +9,7 @@ export function Register(){
     const [email,setEmail]=useState("");
     const [phone,setPhone]=useState(0);
     const [password,setPassword]=useState("");
-    const url=`${import.meta.env.BACKEND_URL}/register`;
+    const url=`http://44.201.149.189:8080/register`;
     const navigate=useNavigate();
     const sendCode=async (event)=>{
       event.preventDefault();

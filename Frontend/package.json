@@ -1,7 +1,7 @@
 {
   "name": "onlinecompiler",
   "private": true,
-  "proxy": "import.meta.env.BACKEND_URL",
+  "proxy": "http://44.201.149.189:8080",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
